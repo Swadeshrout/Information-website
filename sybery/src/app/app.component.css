@@ -1,0 +1,22 @@
+/* .logo-section{
+    
+} */
+
+.logo{
+    height: 7rem;
+}
+
+.navbar-section{
+    background-color: #880000;
+}
+
+.navbar-item {
+    color: #fff;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+/* .navbar-item :hover {
+    background-color: #fff;
+    color:  #880000;
+} */
