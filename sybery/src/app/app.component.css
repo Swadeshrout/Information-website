@@ -1,20 +1,41 @@
-/* .logo-section{
-    
-} */
+.logo-section{
+     width: 35rem;
+}
 
 .logo{
     height: 7rem;
 }
 
-.navbar-section{
-    background-color: #880000;
+.navbar-item{
+  /* font-size: 2rem; */
+  padding: 2.2rem;
+  font-family: serif;
 }
 
-.navbar-item {
+.nav-link{
+    font: 400 14px/20px "Oswald", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    text-transform: uppercase;
+    color: #29293ac7;
+    font-weight: bold;
+}
+
+.nav-link:hover{
+    color: #880000;
+}
+
+.active-nav-link{
+  color: #880000;
+}
+
+/* .navbar-section{
+    background-color: #880000;
+} */
+
+/* .navbar-item {
     color: #fff;
     padding: 1rem;
     cursor: pointer;
-}
+} */
 
 /* .navbar-item :hover {
     background-color: #fff;
