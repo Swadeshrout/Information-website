@@ -7,9 +7,9 @@ import { Component, OnDestroy, OnInit } from '@angular/core'
 })
 
 export class HomeComponent implements OnInit {
-    public title : string;
+    public title: string;
 
-    ngOnInit(){
-        this.title = 'Sybery';
+    ngOnInit() {
+       this.title = 'Sybery';
     }
 }

@@ -1,19 +1,30 @@
 
-<div class="header-section">
+<div class="header-section d-flex">
   <div class="logo-section">
     <img src="../assets/images/logo.PNG" class="logo" [alt]="altLogo">
   </div>
 
   <div class="navbar-section d-flex">
-    <div class="navbar-item">Home</div>
-    <div class="navbar-item">Service</div>
-    <div class="navbar-item">Portfolio</div>
-    <div class="navbar-item">About</div>
-    <div class="navbar-item">Contact</div>
+    <div class="navbar-item">
+      <a href="#" class="nav-link" [ngClass]="{'active-nav-link': isHomeActive}" (click)="onSelectNav('Home')">Home</a>
+    </div>
+    <div class="navbar-item">
+      <a href="#" class="nav-link" [ngClass]="{'active-nav-link': isServiceActive}" (click)="onSelectNav('Service')">Service</a>
+    </div>
+    <div class="navbar-item">
+      <a href="#" class="nav-link" [ngClass]="{'active-nav-link': isPortfolioActive}" (click)="onSelectNav('Portfolio')">Portfolio</a>
+    </div>
+    <div class="navbar-item">
+      <a href="#" class="nav-link" [ngClass]="{'active-nav-link': isAboutActive}" (click)="onSelectNav('About')">About</a>
+    </div>
+    <div class="navbar-item">
+      <a href="#" class="nav-link" [ngClass]="{'active-nav-link': isContactActive}" (click)="onSelectNav('Contact')">Contact</a>
+    </div>
   </div>
+
 </div>
 
-<div class="content-section d-none">
+<div class="content-section">
 
   <home-component></home-component>
 
