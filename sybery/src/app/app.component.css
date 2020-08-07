@@ -1,9 +1,10 @@
 .logo-section{
      width: 35rem;
+     padding-top: 1rem;
 }
 
 .logo{
-    height: 7rem;
+    height: 4rem;
 }
 
 .header-section{
@@ -14,7 +15,7 @@
 
 .navbar-item{
   /* font-size: 2rem; */
-  padding: 2.2rem;
+  padding: 1rem;
   font-family: serif;
 }
 
