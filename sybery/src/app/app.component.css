@@ -6,6 +6,12 @@
     height: 7rem;
 }
 
+.header-section{
+  position: sticky;
+  top: 0;
+  background: white;
+}
+
 .navbar-item{
   /* font-size: 2rem; */
   padding: 2.2rem;
@@ -17,6 +23,7 @@
     text-transform: uppercase;
     color: #29293ac7;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .nav-link:hover{
@@ -25,19 +32,5 @@
 
 .active-nav-link{
   color: #880000;
+  border-bottom: 4px solid;
 }
-
-/* .navbar-section{
-    background-color: #880000;
-} */
-
-/* .navbar-item {
-    color: #fff;
-    padding: 1rem;
-    cursor: pointer;
-} */
-
-/* .navbar-item :hover {
-    background-color: #fff;
-    color:  #880000;
-} */
