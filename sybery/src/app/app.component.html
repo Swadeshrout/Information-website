@@ -6,35 +6,35 @@
 
   <div class="navbar-section d-flex">
     <div class="navbar-item">
-      <a href="#" class="nav-link" [ngClass]="{'active-nav-link': isHomeActive}" (click)="onSelectNav('Home')">Home</a>
+      <span class="nav-link" [ngClass]="{'active-nav-link': isHomeActive}" (click)="ScrollIntoView('#first' , 'home')">Home</span>
     </div>
     <div class="navbar-item">
-      <a href="#" class="nav-link" [ngClass]="{'active-nav-link': isServiceActive}" (click)="onSelectNav('Service')">Service</a>
+      <span class="nav-link" [ngClass]="{'active-nav-link': isServiceActive}" (click)="ScrollIntoView('#second' , 'service')">Service</span>
     </div>
     <div class="navbar-item">
-      <a href="#" class="nav-link" [ngClass]="{'active-nav-link': isPortfolioActive}" (click)="onSelectNav('Portfolio')">Portfolio</a>
+      <span class="nav-link" [ngClass]="{'active-nav-link': isPortfolioActive}" (click)="ScrollIntoView('#third' , 'portfolio')">Portfolio</span>
     </div>
     <div class="navbar-item">
-      <a href="#" class="nav-link" [ngClass]="{'active-nav-link': isAboutActive}" (click)="onSelectNav('About')">About</a>
+      <span class="nav-link" [ngClass]="{'active-nav-link': isAboutActive}" (click)="ScrollIntoView('#fourth' , 'about')">About</span>
     </div>
     <div class="navbar-item">
-      <a href="#" class="nav-link" [ngClass]="{'active-nav-link': isContactActive}" (click)="onSelectNav('Contact')">Contact</a>
+      <span class="nav-link" [ngClass]="{'active-nav-link': isContactActive}" (click)="ScrollIntoView('#fifth' , 'contact')">Contact</span>
     </div>
   </div>
-
 </div>
 
-<div class="content-section">
-
+<div id="first">
   <home-component></home-component>
-
-  <service-component></service-component>
-
-  <portfolio-component></portfolio-component>
-
-  <about-component></about-component>
-
-  <contact-component></contact-component>
 </div>
-
-
+<div id="second">
+  <service-component></service-component>
+</div>
+<div id="third">
+  <portfolio-component></portfolio-component>
+</div>
+<div id="fourth">
+  <about-component></about-component>
+</div>
+<div id="fifth">
+  <portfolio-component></portfolio-component>
+</div>

@@ -17,43 +17,43 @@ export class AppComponent implements OnInit {
 
   }
 
-  onSelectNav(navType) {
-
-    if (navType == 'Home') {
+  ScrollIntoView(elem: string , navType: string) {
+    if (navType == 'home') {
       this.isHomeActive = true;
       this.isServiceActive = false;
       this.isPortfolioActive = false;
       this.isAboutActive = false;
       this.isContactActive = false;
 
-    } else if (navType == 'Service') {
+    } else if (navType == 'service') {
+      this.isHomeActive = false;
       this.isServiceActive = true;
-      this.isHomeActive = false;
       this.isPortfolioActive = false;
       this.isAboutActive = false;
       this.isContactActive = false;
 
-    } else if (navType == 'Portfolio') {
+    } else if (navType == 'portfolio') {
+      this.isHomeActive = false;
+      this.isServiceActive = false;
       this.isPortfolioActive = true;
-      this.isServiceActive = false;
-      this.isHomeActive = false;
       this.isAboutActive = false;
       this.isContactActive = false;
 
-    } else if (navType == 'About') {
+    } else if (navType == 'about') {
+      this.isHomeActive = false;
+      this.isServiceActive = false;
+      this.isPortfolioActive = false;
       this.isAboutActive = true;
-      this.isPortfolioActive = false;
-      this.isServiceActive = false;
-      this.isHomeActive = false;
       this.isContactActive = false;
 
-    } else if (navType == 'Contact') {
-      this.isContactActive = true;
-      this.isAboutActive = false;
-      this.isPortfolioActive = false;
-      this.isServiceActive = false;
+    } else if (navType == 'contact') {
       this.isHomeActive = false;
-
+      this.isServiceActive = false;
+      this.isPortfolioActive = false;
+      this.isAboutActive = false;
+      this.isContactActive = true;
     }
+
+    document.querySelector(elem).scrollIntoView({behavior: 'smooth', block: 'end', inline: 'nearest'});
   }
 }

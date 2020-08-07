@@ -1,4 +1,5 @@
-import { Component, OnDestroy, OnInit } from '@angular/core'
+import { Component, OnDestroy, OnInit } from '@angular/core';
+// For MDB Angular Free
 
 @Component ({
     selector: 'home-component',
@@ -9,7 +10,12 @@ import { Component, OnDestroy, OnInit } from '@angular/core'
 export class HomeComponent implements OnInit {
     public title: string;
 
+    constructor() {
+    }
+
     ngOnInit() {
        this.title = 'Sybery';
     }
+
+
 }
