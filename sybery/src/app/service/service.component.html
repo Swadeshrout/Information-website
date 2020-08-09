@@ -1,1 +1,65 @@
-<div class="service-section">Service Component</div>
+<div class="service-section pt-3">
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6 text-center">
+            <button class="btn action" [ngClass]="{'active-btn' : isAMCActive}" (click)="onClickEvent('AMC')">AMC Service</button>
+            <button class="btn ml-2 action" [ngClass]="{'active-btn' : isResidentailActive}" (click)="onClickEvent('RES')">Residential Engineering</button>
+        </div>
+        <div class="col-3"></div>
+    </div>
+
+    <div class="d-flex">
+        <ng-container *ngIf="isAMCActive ; else residential">
+            <div class="amc-section w-100">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-5">
+                        <div class="pt-3">
+                            <h1 class="text-center headingService">Annual Maintenance Contract Services</h1>
+                            <hr class="amcLine">
+                        </div>
+
+                        <div class="paragraph-section p-2">
+                            <p><img class="amc-logo" src="../../assets/images/amc.jpg">Cloud computing is not just a one time job. Cloud requires optimization and upgradations from time-to-time. Teleglobal International provides annual maintenance contract services to its customers with cloud infrastructure at a competitive price for various services</p>
+                            <p>We provide complete IT solutions to help for Computing Servers, Storage & Networking Devices. We meet stringent and robust SLAs as per the needs of the client’s business. Cloud Uptime is the most critical requirement and focus point of most of the customers and we achieved the same for them.</p>
+                            <p>Teleglobal International provides comprehensive AMC services. We focus on including most of the cloud services and maintenance parameters to maintain a win-win relationship with our customers.</p>
+                            <p>Our AMC services include sales and support of Network Cabling, Firewall Installation, Data Security, IT Hardware Maintenance, malware detection & correction and much more. Our integrated and high-quality IT structures make sure the availability of cloud infrastructure and enterprise continuity.</p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-6">
+                        <div class="pt-3">
+                            <h1 class="text-center headingService">Our AMC Service Includes:</h1>
+                            <hr class="amcLine">
+                        </div>
+                        <div class="chart-section">
+                            <ngx-charts-pie-chart
+                            [view]="view"
+                            [scheme]="colorScheme"
+                            [results]="single"
+                            [gradient]="gradient"
+                            [legend]="showLegend"
+                            [legendPosition]="legendPosition"
+                            [labels]="showLabels"
+                            [doughnut]="isDoughnut"
+                            [trimLabels]="false"
+                            >
+                        </ngx-charts-pie-chart>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </ng-container>
+        
+        <ng-template #residential>
+            <div class="residential-section w-100 p-2">
+                <h1 class="text-center">Development in progress</h1>
+            </div>
+        </ng-template>
+        
+        
+    </div>
+</div>
