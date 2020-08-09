@@ -11,6 +11,8 @@
   position: sticky;
   top: 0;
   background: white;
+  z-index: 1;
+  height: 80px;
 }
 
 .navbar-item{
