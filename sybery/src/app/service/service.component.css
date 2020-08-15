@@ -3,10 +3,33 @@
     padding-top: 50px; 
     background-color:#2125291c;
     overflow: hidden;
+    height: 40rem;
 }
 
-.sectionHight{
-  height:40rem;
+.residential-content{
+  overflow: auto;
+  height: 35rem;
+  overflow-x: hidden;
+}
+
+#style-2::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#style-2::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+#style-2::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #a79999;
 }
 
 .amcLine{
@@ -98,7 +121,7 @@
   color: #fff;
   text-align: center;
   position: relative;
-  font-size: 17px;
+  font-size: 16px;
   padding: 10px;
   background: rgba(0, 0, 0, 0.6);
   -webkit-transform: translateY(45px);
