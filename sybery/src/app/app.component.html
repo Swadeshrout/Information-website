@@ -1,7 +1,7 @@
 
 <div class="header-section d-flex">
   <div class="logo-section">
-    <img src="../assets/images/logo.PNG" class="logo" [alt]="altLogo">
+    <img src="../assets/images/logo.PNG" class="logo hover-pointer" (click)="ScrollIntoView('#first' , 'home')" [alt]="altLogo">
   </div>
 
   <div class="navbar-section d-flex">
@@ -11,7 +11,7 @@
     <div class="navbar-item">
       <span class="nav-link" [ngClass]="{'active-nav-link': isServiceActive}" (click)="ScrollIntoView('#second' , 'service')">Service</span>
     </div>
-    <div class="navbar-item">
+    <div class="navbar-item d-none">
       <span class="nav-link" [ngClass]="{'active-nav-link': isPortfolioActive}" (click)="ScrollIntoView('#third' , 'portfolio')">Portfolio</span>
     </div>
     <div class="navbar-item">
